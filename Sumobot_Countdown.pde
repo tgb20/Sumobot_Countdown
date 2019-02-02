@@ -1,10 +1,6 @@
 boolean timer;
-boolean yellowTimerBool;
-boolean greenTimerBool;
 PFont font;
 Timer mainTimer;
-Timer yellowTimer;
-Timer greenTimer;
 
 void setup(){
   size(1920, 1080);
@@ -14,10 +10,6 @@ void setup(){
   textAlign(CENTER);
   text("Ready", width/2, height/2);
   mainTimer = new Timer();
-  yellowTimer = new Timer();
-  greenTimer = new Timer();
-  greenTimer.setTime(2000);
-  yellowTimer.setTime(2000);
   mainTimer.setTime(36000);
 }
 
